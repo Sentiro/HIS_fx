@@ -1,0 +1,336 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Accordion?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="800.0" prefWidth="1208.0" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.DoctorC">
+   <children>
+      <Pane layoutX="962.0" layoutY="109.0" prefHeight="692.0" prefWidth="246.0" style="-fx-background-color: f2f6f5;">
+         <children>
+            <VBox layoutY="34.0" prefHeight="121.0" prefWidth="246.0">
+               <children>
+                  <Button contentDisplay="RIGHT" mnemonicParsing="false" onAction="#turnToMyPatientPage" prefHeight="60.0" prefWidth="259.0" style="-fx-background-color: c8dad3;" text="我的患者">
+                     <font>
+                        <Font name="Microsoft YaHei UI Light" size="24.0" />
+                     </font>
+                  </Button>
+                  <Button mnemonicParsing="false" prefHeight="60.0" prefWidth="246.0" style="-fx-background-color: #d5e0db;" text="开立处方">
+                     <font>
+                        <Font name="Microsoft YaHei UI Light" size="24.0" />
+                     </font>
+                  </Button>
+               </children>
+            </VBox>
+            <Label layoutX="14.0" layoutY="4.0" text="MENU" />
+            <Button fx:id="next" layoutY="602.0" mnemonicParsing="false" onAction="#nextOne" prefHeight="61.0" prefWidth="246.0" text="Next" />
+         </children>
+      </Pane>
+      <Pane prefHeight="109.0" prefWidth="1208.0" style="-fx-background-color: c8dad3;">
+         <children>
+            <Label layoutX="860.0" layoutY="76.0" text="东软云HIS医院管理系统" />
+            <Label layoutX="38.0" layoutY="25.0" text="门诊系统 Clinic System">
+               <font>
+                  <Font name="Microsoft YaHei UI Light" size="48.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <SplitPane dividerPositions="0.25104166666666666" layoutY="145.0" prefHeight="656.0" prefWidth="962.0">
+         <items>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="662.0" prefWidth="238.0">
+               <children>
+                  <Accordion prefHeight="654.0" prefWidth="237.0">
+                    <panes>
+                      <TitledPane animated="false" prefHeight="631.0" prefWidth="237.0" text="未看诊">
+                        <content>
+                          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="192.0">
+                                 <children>
+                                    <TableView fx:id="untreatedPatientTable" layoutX="-1.0" prefHeight="594.0" prefWidth="237.0">
+                                       <columns>
+                                          <TableColumn fx:id="medicineID_untreated" prefWidth="122.0" text="病历号" />
+                                          <TableColumn fx:id="name_untreated" prefWidth="115.0" text="姓名" />
+                                       </columns>
+                                    </TableView>
+                                 </children>
+                              </AnchorPane>
+                        </content>
+                      </TitledPane>
+                      <TitledPane animated="false" text="已看诊">
+                        <content>
+                          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                 <children>
+                                    <TableView fx:id="treatedPatientTable" layoutX="-1.0" prefHeight="593.0" prefWidth="238.0">
+                                       <columns>
+                                          <TableColumn fx:id="medicineID" prefWidth="115.0" text="病历号" />
+                                          <TableColumn fx:id="name_table" prefWidth="122.0" text="姓名" />
+                                       </columns>
+                                    </TableView>
+                                 </children>
+                              </AnchorPane>
+                        </content>
+                      </TitledPane>
+                    </panes>
+                  </Accordion>
+               </children>
+            </AnchorPane>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="690.0" prefWidth="693.0">
+               <children>
+                  <TabPane fx:id="tabPane" layoutY="-2.0" prefHeight="656.0" prefWidth="715.0" tabClosingPolicy="UNAVAILABLE">
+                     <tabs>
+                        <Tab style="-fx-background-color: c8dad3;" text="病例首页">
+                           <content>
+                              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="637.0" prefWidth="714.0">
+                                 <children>
+                                    <Pane fx:id="profile" layoutX="70.0" layoutY="48.0" prefHeight="240.0" prefWidth="573.0" style="-fx-background-color: f2f6f5;">
+                                       <children>
+                                          <Text fx:id="name" layoutX="39.0" layoutY="119.0" strokeType="OUTSIDE" strokeWidth="0.0">
+                                             <font>
+                                                <Font name="Microsoft YaHei UI Light" size="24.0" />
+                                             </font>
+                                          </Text>
+                                          <Text fx:id="gendar" layoutX="121.0" layoutY="117.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="39.326171875">
+                                             <font>
+                                                <Font name="Microsoft YaHei UI Light" size="18.0" />
+                                             </font>
+                                          </Text>
+                                          <Text fx:id="birthday" layoutX="212.0" layoutY="117.0" strokeType="OUTSIDE" strokeWidth="0.0">
+                                             <font>
+                                                <Font name="Microsoft YaHei UI Light" size="18.0" />
+                                             </font>
+                                          </Text>
+                                          <Text fx:id="IDNumber" layoutX="150.0" layoutY="160.0" strokeType="OUTSIDE" strokeWidth="0.0">
+                                             <font>
+                                                <Font name="Microsoft YaHei UI Light" size="24.0" />
+                                             </font>
+                                          </Text>
+                                          <Text layoutX="40.0" layoutY="159.0" strokeType="OUTSIDE" strokeWidth="0.0">
+                                             <font>
+                                                <Font name="Microsoft YaHei UI Light" size="18.0" />
+                                             </font>
+                                          </Text>
+                                          <Text layoutX="40.0" layoutY="197.0" strokeType="OUTSIDE" strokeWidth="0.0">
+                                             <font>
+                                                <Font name="Microsoft YaHei UI Light" size="18.0" />
+                                             </font>
+                                          </Text>
+                                          <Text fx:id="address" layoutX="151.0" layoutY="197.0" strokeType="OUTSIDE" strokeWidth="0.0">
+                                             <font>
+                                                <Font name="Microsoft YaHei UI Light" size="18.0" />
+                                             </font>
+                                          </Text>
+                                          <Text fx:id="ID" layoutX="34.0" layoutY="66.0" strokeType="OUTSIDE" strokeWidth="0.0">
+                                             <font>
+                                                <Font name="Microsoft YaHei" size="36.0" />
+                                             </font>
+                                          </Text>
+                                       </children>
+                                    </Pane>
+                                    <Text fx:id="isOneRecord" layoutX="40.0" layoutY="325.0" strokeType="OUTSIDE" strokeWidth="0.0" text="请选择患者以显示相关信息 " textAlignment="CENTER" wrappingWidth="632.0" />
+                                    <ListView fx:id="myOneRecordList" layoutX="71.0" layoutY="337.0" prefHeight="255.0" prefWidth="576.0" style="-fx-background-color: ffffff;" />
+                                 </children>
+                              </AnchorPane>
+                           </content>
+                        </Tab>
+                        <Tab style="-fx-background-color: c8dad3;" text="开立诊断">
+                           <content>
+                              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="583.0" prefWidth="712.0">
+                                 <children>
+                                    <ScrollPane layoutX="148.0" layoutY="89.0" prefHeight="614.0" prefWidth="712.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                       <content>
+                                          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="827.0" prefWidth="696.0">
+                                             <children>
+                                                <TableView fx:id="diseaseTable" layoutX="28.0" layoutY="546.0" prefHeight="220.0" prefWidth="642.0">
+                                                   <columns>
+                                                      <TableColumn fx:id="ICD_table" prefWidth="123.0" text="ICD" />
+                                                      <TableColumn fx:id="diseaseName" prefWidth="518.0" text="名称" />
+                                                   </columns>
+                                                </TableView>
+                                                <Label alignment="CENTER" contentDisplay="CENTER" layoutX="20.0" layoutY="477.0" prefHeight="36.0" prefWidth="72.0" style="-fx-background-color: c8dad3;" text="诊断">
+                                                   <font>
+                                                      <Font size="18.0" />
+                                                   </font>
+                                                </Label>
+                                                <TextArea fx:id="history" layoutX="87.0" layoutY="132.0" prefHeight="73.0" prefWidth="387.0" />
+                                                <TextArea fx:id="history1" layoutX="84.0" layoutY="225.0" prefHeight="92.0" prefWidth="525.0" />
+                                                <Label layoutX="31.0" layoutY="225.0" text="过敏史">
+                                                   <font>
+                                                      <Font size="14.0" />
+                                                   </font>
+                                                </Label>
+                                                <Label layoutX="35.0" layoutY="339.0" text="既往史">
+                                                   <font>
+                                                      <Font size="14.0" />
+                                                   </font>
+                                                </Label>
+                                                <Label alignment="CENTER" contentDisplay="CENTER" layoutX="16.0" layoutY="36.0" prefHeight="36.0" prefWidth="72.0" style="-fx-background-color: c8dad3;" text="病史">
+                                                   <font>
+                                                      <Font size="18.0" />
+                                                   </font>
+                                                </Label>
+                                                <ComboBox layoutX="86.0" layoutY="36.0" prefHeight="36.0" prefWidth="538.0" promptText="ChoosePatient" style="-fx-background-color: f2f6f5;" />
+                                                <Label layoutX="28.0" layoutY="90.0" text="主诉">
+                                                   <font>
+                                                      <Font size="14.0" />
+                                                   </font>
+                                                </Label>
+                                                <Label layoutX="28.0" layoutY="136.0" text="现病史">
+                                                   <font>
+                                                      <Font size="14.0" />
+                                                   </font>
+                                                </Label>
+                                                <TextField fx:id="zhusu" layoutX="88.0" layoutY="85.0" prefHeight="30.0" prefWidth="208.0" />
+                                                <TextArea fx:id="history2" layoutX="84.0" layoutY="339.0" prefHeight="121.0" prefWidth="525.0" />
+                                                <ComboBox fx:id="TypeBox" layoutX="92.0" layoutY="477.0" prefHeight="37.0" prefWidth="160.0" promptText="ChooseType" style="-fx-background-color: f2f6f5;" />
+                                                <Button fx:id="submit" layoutX="614.0" layoutY="770.0" mnemonicParsing="false" onAction="#submit" text="提交" />
+                                                <Button fx:id="addDisease" layoutX="544.0" layoutY="481.0" mnemonicParsing="false" onAction="#addDisease" text="添加" />
+                                                <Button fx:id="removeDisease" layoutX="614.0" layoutY="480.0" mnemonicParsing="false" onAction="#deleteDisease" text="删除" />
+                                             </children>
+                                          </AnchorPane>
+                                       </content>
+                                    </ScrollPane>
+                                 </children>
+                              </AnchorPane>
+                           </content>
+                        </Tab>
+                        <Tab fx:id="examination" closable="false" style="-fx-background-color: c8dad3;" text="检查申请">
+                           <content>
+                              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                 <children>
+                                    <TableView fx:id="examination_table" layoutX="14.0" layoutY="97.0" prefHeight="355.0" prefWidth="685.0">
+                                      <columns>
+                                        <TableColumn fx:id="numberE" prefWidth="110.0" text="编码" />
+                                        <TableColumn fx:id="nameE" prefWidth="237.0" text="项目名称" />
+                                          <TableColumn fx:id="departmentE" prefWidth="134.0" text="执行科室" />
+                                          <TableColumn fx:id="priceE" prefWidth="94.0" text="单价" />
+                                          <TableColumn fx:id="statusE" prefWidth="109.0" text="状态" />
+                                      </columns>
+                                    </TableView>
+                                    <Pane layoutX="15.0" layoutY="36.0" prefHeight="36.0" prefWidth="683.0" style="-fx-background-color: f2f6f5;">
+                                       <children>
+                                          <HBox layoutX="413.0" layoutY="3.0" prefHeight="30.0" prefWidth="263.0">
+                                             <children>
+                                                <Button mnemonicParsing="false" onAction="#addExamination" prefHeight="30.0" prefWidth="88.0" style="-fx-background-color: f2f6f5;" text="新增" />
+                                                <Button mnemonicParsing="false" onAction="#saveExamination" prefHeight="30.0" prefWidth="76.0" style="-fx-background-color: f2f6f5;" text="开立" />
+                                                <Button mnemonicParsing="false" onAction="#deleteExamination" prefHeight="30.0" prefWidth="63.0" style="-fx-background-color: f2f6f5;" text="删除" />
+                                                <Button mnemonicParsing="false" onAction="#removeExamination" prefHeight="30.0" prefWidth="80.0" style="-fx-background-color: f2f6f5;" text="作废" />
+                                             </children>
+                                          </HBox>
+                                          <Label layoutY="4.0" text="检查项目表">
+                                             <font>
+                                                <Font size="18.0" />
+                                             </font>
+                                          </Label>
+                                       </children>
+                                    </Pane>
+                                    <Button layoutX="648.0" layoutY="485.0" mnemonicParsing="false" onAction="#submitE" text="提交" />
+                                 </children></AnchorPane>
+                           </content>
+                        </Tab>
+                        <Tab style="-fx-background-color: c8dad3;" text="门诊确诊">
+                           <content>
+                              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                 <children>
+                                    <TableView fx:id="makeSureTable" layoutX="12.0" layoutY="100.0" prefHeight="418.0" prefWidth="692.0">
+                                      <columns>
+                                        <TableColumn fx:id="IDM" prefWidth="75.0" text="ID" />
+                                        <TableColumn fx:id="nameM" prefWidth="137.0" text="患者姓名" />
+                                          <TableColumn fx:id="departmentM" prefWidth="188.0" text="挂号科室" />
+                                          <TableColumn fx:id="timeM" prefWidth="178.0" text="诊断时间" />
+                                          <TableColumn fx:id="statusM" prefWidth="113.0" text="状态" />
+                                      </columns>
+                                    </TableView>
+                                    <Label layoutX="14.0" layoutY="41.0" prefHeight="36.0" prefWidth="692.0" style="-fx-background-color: f2f6f5;" text="待确诊患者列表">
+                                       <font>
+                                          <Font size="18.0" />
+                                       </font>
+                                    </Label>
+                                    <Button layoutX="577.0" layoutY="44.0" mnemonicParsing="false" onAction="#confine" prefHeight="30.0" prefWidth="55.0" style="-fx-background-color: c8dad3;" text="编辑" />
+                                    <Button layoutX="632.0" layoutY="44.0" mnemonicParsing="false" onAction="#submitStatus" prefHeight="30.0" prefWidth="59.0" style="-fx-background-color: c8dad3;" text="确诊" />
+                                    <Button layoutX="522.0" layoutY="44.0" mnemonicParsing="false" onAction="#refresh" prefHeight="30.0" prefWidth="55.0" style="-fx-background-color: c8dad3;" text="刷新" />
+                                 </children></AnchorPane>
+                           </content>
+                        </Tab>
+                        <Tab style="-fx-background-color: c8dad3;" text="开立处方">
+                          <content>
+                            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="753.0" prefWidth="715.0">
+                                 <children>
+                                    <ScrollPane prefHeight="616.0" prefWidth="715.0" AnchorPane.bottomAnchor="1.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                      <content>
+                                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="808.0" prefWidth="698.0">
+                                             <children>
+                                                <TableView fx:id="medicineTable" layoutX="15.0" layoutY="447.0" prefHeight="261.0" prefWidth="665.0">
+                                                   <columns>
+                                                      <TableColumn fx:id="medicineTID" prefWidth="106.0" text="编码" />
+                                                      <TableColumn fx:id="medicineName" prefWidth="185.0" text="名称" />
+                                                      <TableColumn fx:id="medicineForm" prefWidth="128.0" text="规格" />
+                                                      <TableColumn fx:id="medicinePrice" prefWidth="127.0" text="单价" />
+                                                      <TableColumn fx:id="medicineNumbers" minWidth="5.0" prefWidth="118.0" text="数量" />
+                                                   </columns>
+                                                </TableView>
+                                                <Button fx:id="delete" layoutX="610.0" layoutY="378.0" mnemonicParsing="false" onAction="#removeMedicine" prefHeight="36.0" prefWidth="72.0" style="-fx-background-color: c8dad3;" text="减药" />
+                                                <Label alignment="CENTER" layoutX="17.0" layoutY="378.0" prefHeight="36.0" prefWidth="72.0" style="-fx-background-color: c8dad3;" text="开药">
+                                                   <font>
+                                                      <Font size="18.0" />
+                                                   </font>
+                                                </Label>
+                                                <Button fx:id="delete1" layoutX="539.0" layoutY="378.0" mnemonicParsing="false" onAction="#addMedicine" prefHeight="36.0" prefWidth="72.0" style="-fx-background-color: c8dad3;" text="增药" />
+                                                <Button layoutX="600.0" layoutY="725.0" mnemonicParsing="false" onAction="#submitPrescription" prefHeight="36.0" prefWidth="72.0" text="提交" />
+                                                <TableView fx:id="mouldTable" layoutX="13.0" layoutY="110.0" prefHeight="234.0" prefWidth="470.0">
+                                                   <columns>
+                                                      <TableColumn fx:id="nameMould" prefWidth="271.0" text="名称" />
+                                                      <TableColumn fx:id="statusMould" prefWidth="198.0" text="状态" />
+                                                   </columns>
+                                                </TableView>
+                                                <Label alignment="CENTER" contentDisplay="CENTER" layoutX="13.0" layoutY="40.0" prefHeight="36.0" prefWidth="72.0" style="-fx-background-color: c8dad3;" text="模板">
+                                                   <font>
+                                                      <Font size="18.0" />
+                                                   </font>
+                                                </Label>
+                                                <Button layoutX="548.0" layoutY="40.0" mnemonicParsing="false" onAction="#deleteMould" prefHeight="36.0" prefWidth="61.0" style="-fx-background-color: c8dad3;" text="删除" />
+                                                <Button layoutX="609.0" layoutY="40.0" mnemonicParsing="false" onAction="#newMould" prefHeight="36.0" prefWidth="60.0" style="-fx-background-color: c8dad3;" text="新建" />
+                                                <Button layoutX="483.0" layoutY="40.0" mnemonicParsing="false" onAction="#addMould" prefHeight="36.0" prefWidth="65.0" style="-fx-background-color: c8dad3;" text="添加" />
+                                                <Label layoutX="85.0" layoutY="40.0" prefHeight="36.0" prefWidth="400.0" style="-fx-background-color: f2f6f5;" text="  Choose Mould" />
+                                                <Label layoutX="89.0" layoutY="378.0" prefHeight="36.0" prefWidth="451.0" style="-fx-background-color: f2f6f5;" text="  Choose Medicine" />
+                                             </children>
+                                          </AnchorPane>
+                                      </content>
+                                    </ScrollPane>
+                                 </children>
+                              </AnchorPane>
+                          </content>
+                        </Tab>
+                     </tabs>
+                  </TabPane>
+               </children>
+            </AnchorPane>
+         </items>
+      </SplitPane>
+      <Label fx:id="details" layoutX="185.0" layoutY="109.0" prefHeight="36.0" prefWidth="777.0" style="-fx-background-color: f2f6f5;" text="无" />
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="33.0" layoutY="109.0" prefHeight="36.0" prefWidth="152.0" style="-fx-background-color: f2f6f5;" text="当前患者">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Button layoutY="109.0" mnemonicParsing="false" onAction="#refreshPatientTable" prefHeight="36.0" prefWidth="35.0" />
+      <FontAwesomeIconView glyphName="REPEAT" layoutX="10.0" layoutY="135.0" size="25" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="15.00000810623169" />
+   </children>
+</AnchorPane>

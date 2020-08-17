@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="511.0" prefWidth="524.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.MedicinePage">
+   <children>
+      <Label layoutX="114.0" layoutY="106.0" text="药品编码" />
+      <Label layoutX="114.0" layoutY="161.0" text="药品名称" />
+      <Label layoutX="114.0" layoutY="211.0" text="药品规格" />
+      <Label layoutX="114.0" layoutY="266.0" text="药品单价" />
+      <Label layoutX="114.0" layoutY="316.0" text="用法用量" />
+      <Label layoutX="114.0" layoutY="370.0" text="药品数量" />
+      <TextField fx:id="ID" layoutX="228.0" layoutY="101.0" prefHeight="30.0" prefWidth="221.0" promptText="ID" />
+      <TextField fx:id="name" layoutX="228.0" layoutY="156.0" prefHeight="30.0" prefWidth="221.0" />
+      <TextField fx:id="type" layoutX="228.0" layoutY="206.0" prefHeight="30.0" prefWidth="221.0" />
+      <TextField fx:id="price" layoutX="228.0" layoutY="261.0" prefHeight="30.0" prefWidth="221.0" />
+      <TextField fx:id="usage" layoutX="228.0" layoutY="311.0" prefHeight="30.0" prefWidth="221.0" />
+      <TextField fx:id="numbers" layoutX="228.0" layoutY="365.0" prefHeight="30.0" prefWidth="221.0" />
+      <Button layoutX="449.0" layoutY="437.0" mnemonicParsing="false" onAction="#close" text="确认" />
+      <Pane prefHeight="73.0" prefWidth="586.0" style="-fx-background-color: c8dad3;" />
+   </children>
+</AnchorPane>

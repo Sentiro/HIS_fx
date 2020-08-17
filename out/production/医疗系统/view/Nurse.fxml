@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.web.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="800.0" prefWidth="1208.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.Nurse">
+   <children>
+      <Pane prefHeight="109.0" prefWidth="1208.0" style="-fx-background-color: c8dad3;">
+         <children>
+            <Label layoutX="1006.0" layoutY="76.0" text="东软云HIS医院管理系统" />
+            <Label layoutX="38.0" layoutY="25.0" text="分诊台 Clinic System">
+               <font>
+                  <Font name="Microsoft YaHei UI Light" size="48.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Pane layoutX="962.0" layoutY="109.0" prefHeight="692.0" prefWidth="246.0" style="-fx-background-color: f2f6f5;">
+         <children>
+            <VBox layoutY="34.0" prefHeight="121.0" prefWidth="246.0">
+               <children>
+                  <Button contentDisplay="RIGHT" mnemonicParsing="false" prefHeight="60.0" prefWidth="259.0" style="-fx-background-color: c8dad3;" text="我的患者">
+                     <font>
+                        <Font name="Microsoft YaHei UI Light" size="24.0" />
+                     </font>
+                  </Button>
+                  <Button mnemonicParsing="false" prefHeight="60.0" prefWidth="246.0" style="-fx-background-color: #d5e0db;" text="开立处方">
+                     <font>
+                        <Font name="Microsoft YaHei UI Light" size="24.0" />
+                     </font>
+                  </Button>
+               </children>
+            </VBox>
+            <Label layoutX="14.0" layoutY="4.0" text="MENU" />
+         </children>
+      </Pane>
+      <Button fx:id="submit" layoutX="579.0" layoutY="705.0" mnemonicParsing="false" onAction="#submit" text="分诊" />
+      <TextField fx:id="textField" layoutX="73.0" layoutY="177.0" promptText="请输入病历号" />
+      <Button fx:id="search" layoutX="275.0" layoutY="177.0" mnemonicParsing="false" onAction="#search" style="-fx-background-color: c8dad3;" text="搜索" />
+      <Pane layoutX="73.0" layoutY="255.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: f2f6f5;">
+         <children>
+            <ImageView fx:id="ImageView" blendMode="MULTIPLY" fitHeight="216.0" fitWidth="202.0" layoutX="-1.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../女1.jpg" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <Pane layoutX="282.0" layoutY="255.0" prefHeight="200.0" prefWidth="350.0" style="-fx-background-color: #d5e0db;">
+         <children>
+            <Label fx:id="medicineID" layoutX="55.0" layoutY="46.0" prefHeight="24.0" prefWidth="78.0">
+               <font>
+                  <Font size="18.0" />
+               </font></Label>
+            <Label fx:id="ID" layoutX="55.0" layoutY="126.0">
+               <font>
+                  <Font size="18.0" />
+               </font></Label>
+            <Label fx:id="gender" layoutX="127.0" layoutY="88.0" prefHeight="24.0" prefWidth="46.0">
+               <font>
+                  <Font size="18.0" />
+               </font></Label>
+            <Label layoutX="200.0" layoutY="146.0" text="基本信息" textFill="#615b5b">
+               <font>
+                  <Font name="Microsoft YaHei UI Light" size="36.0" />
+               </font>
+            </Label>
+            <Label fx:id="name" layoutX="55.0" layoutY="84.0" prefHeight="32.0" prefWidth="50.0">
+               <font>
+                  <Font size="18.0" />
+               </font></Label>
+         </children>
+      </Pane>
+      <Pane layoutX="73.0" layoutY="466.0" prefHeight="200.0" prefWidth="441.0" style="-fx-background-color: c8dad3;">
+         <children>
+            <Label fx:id="type" layoutX="62.0" layoutY="40.0">
+               <font>
+                  <Font size="18.0" />
+               </font></Label>
+            <Label fx:id="department" layoutX="62.0" layoutY="88.0">
+               <font>
+                  <Font size="18.0" />
+               </font></Label>
+            <Label fx:id="doctor" layoutX="62.0" layoutY="138.0">
+               <font>
+                  <Font size="18.0" />
+               </font></Label>
+            <Label layoutX="290.0" layoutY="148.0" text="挂号信息" textFill="#615b5b">
+               <font>
+                  <Font name="Microsoft YaHei UI Light" size="36.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Accordion fx:id="doctorList" layoutX="656.0" layoutY="179.0" prefHeight="552.0" prefWidth="273.0" />
+      <ComboBox fx:id="typeBox" layoutX="390.0" layoutY="705.0" prefHeight="30.0" prefWidth="126.0" />
+   </children>
+</AnchorPane>

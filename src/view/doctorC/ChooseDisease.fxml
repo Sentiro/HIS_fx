@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="477.0" prefWidth="487.0" style="-fx-background-color: c8dad3;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ChooseDisease">
+   <children>
+      <TextField fx:id="textField" layoutX="86.0" layoutY="30.0" prefHeight="30.0" prefWidth="248.0" />
+      <Button fx:id="Search" layoutX="333.0" layoutY="30.0" mnemonicParsing="false" onAction="#search" text="Button" />
+      <ScrollPane fx:id="scrollPane" layoutY="85.0" prefHeight="316.0" prefWidth="487.0">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="256.0" prefWidth="374.0">
+               <children>
+                  <TreeView fx:id="treeView" layoutX="50.0" layoutY="21.0" prefHeight="316.0" prefWidth="487.0" AnchorPane.bottomAnchor="-60.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="-113.0" AnchorPane.topAnchor="0.0" />
+               </children>
+            </AnchorPane>
+        </content>
+      </ScrollPane>
+      <Button fx:id="submit" layoutX="209.0" layoutY="423.0" mnemonicParsing="false" onAction="#submit" text="确认" />
+   </children>
+</AnchorPane>

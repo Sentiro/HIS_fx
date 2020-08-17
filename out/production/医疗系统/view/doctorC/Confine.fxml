@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="781.0" prefWidth="696.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ConfineOneRecord">
+   <children>
+      <TableView fx:id="diseaseTable" layoutX="28.0" layoutY="471.0" prefHeight="220.0" prefWidth="642.0">
+         <columns>
+            <TableColumn fx:id="ICD_table" prefWidth="123.0" text="ICD" />
+            <TableColumn fx:id="diseaseName" prefWidth="518.0" text="名称" />
+         </columns>
+      </TableView>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="20.0" layoutY="402.0" prefHeight="36.0" prefWidth="72.0" style="-fx-background-color: c8dad3;" text="诊断">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextArea fx:id="history" layoutX="87.0" layoutY="132.0" prefHeight="73.0" prefWidth="387.0" />
+      <TextArea fx:id="history1" layoutX="84.0" layoutY="225.0" prefHeight="60.0" prefWidth="525.0" />
+      <Label layoutX="31.0" layoutY="225.0" text="过敏史">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="31.0" layoutY="307.0" text="既往史">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="16.0" layoutY="36.0" prefHeight="36.0" prefWidth="72.0" style="-fx-background-color: c8dad3;" text="患者">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="29.0" layoutY="91.0" text="主   诉">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="29.0" layoutY="138.0" text="症   状">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="zhusu" layoutX="88.0" layoutY="85.0" prefHeight="30.0" prefWidth="208.0" />
+      <TextArea fx:id="history2" layoutX="84.0" layoutY="307.0" prefHeight="60.0" prefWidth="525.0" />
+      <ComboBox fx:id="TypeBox" layoutX="92.0" layoutY="402.0" prefHeight="37.0" prefWidth="160.0" promptText="ChooseType" style="-fx-background-color: f2f6f5;" />
+      <Button fx:id="submit" layoutX="624.0" layoutY="709.0" mnemonicParsing="false" onAction="#submit" text="提交" />
+      <Button fx:id="addDisease" layoutX="544.0" layoutY="406.0" mnemonicParsing="false" onAction="#addDisease" text="添加" />
+      <Button fx:id="removeDisease" layoutX="614.0" layoutY="405.0" mnemonicParsing="false" onAction="#deleteDisease" text="删除" />
+      <Label fx:id="label" layoutX="88.0" layoutY="36.0" prefHeight="36.0" prefWidth="573.0" style="-fx-background-color: f2f6f5;" />
+   </children>
+</AnchorPane>

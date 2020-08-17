@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="681.0" prefWidth="852.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ExaminationView">
+   <children>
+      <Button layoutX="682.0" layoutY="613.0" mnemonicParsing="false" onAction="#submit" prefHeight="30.0" prefWidth="69.0" text="确认" />
+      <Pane prefHeight="150.0" prefWidth="852.0" style="-fx-background-color: c8dad3;">
+         <children>
+            <Button layoutX="681.0" layoutY="108.0" mnemonicParsing="false" onAction="#search" prefHeight="30.0" prefWidth="69.0" style="-fx-background-color: f2f6f5;" text="搜索" />
+            <TextField fx:id="textfield" layoutX="86.0" layoutY="108.0" prefHeight="30.0" prefWidth="596.0" promptText="请输入检查项目编码或名称" style="-fx-background-color: f2f6f5;" />
+         </children>
+      </Pane>
+      <TableView fx:id="examination_table" layoutX="61.0" layoutY="170.0" prefHeight="397.0" prefWidth="706.0">
+         <columns>
+            <TableColumn fx:id="number" prefWidth="110.0" text="编码" />
+            <TableColumn fx:id="name" prefWidth="237.0" text="项目名称" />
+            <TableColumn fx:id="department" prefWidth="190.0" text="执行科室" />
+            <TableColumn fx:id="price" prefWidth="168.0" text="单价" />
+         </columns>
+      </TableView>
+   </children>
+</AnchorPane>

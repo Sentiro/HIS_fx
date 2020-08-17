@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.Refund">
+   <children>
+      <Text layoutX="41.0" layoutY="242.0" strokeType="OUTSIDE" strokeWidth="0.0" text="患者消费信息">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <TableView fx:id="itemTable" layoutX="43.0" layoutY="266.0" prefHeight="345.0" prefWidth="898.0">
+         <columns>
+            <TableColumn fx:id="IdColumn" prefWidth="113.0" text="病历号" />
+            <TableColumn fx:id="nameColumn" prefWidth="107.0" text="姓名" />
+            <TableColumn fx:id="itemColumn" prefWidth="172.0" text="项目名称" />
+            <TableColumn fx:id="priceColumn" prefWidth="108.0" text="单价" />
+            <TableColumn fx:id="numberColumn" prefWidth="103.0" text="数量" />
+            <TableColumn fx:id="timeColumn" prefWidth="199.0" text="开立时间" />
+            <TableColumn fx:id="statusColumn" prefWidth="95.0" text="状态" />
+         </columns>
+      </TableView>
+      <TextField fx:id="ID" layoutX="514.0" layoutY="181.0" prefHeight="30.0" prefWidth="216.0" />
+      <Text layoutX="428.0" layoutY="201.0" strokeType="OUTSIDE" strokeWidth="0.0" text="身份证号" />
+      <Label layoutX="41.0" layoutY="148.0" text="患者信息查询">
+         <font>
+            <Font name="Microsoft YaHei UI Light" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="88.0" layoutY="186.0" text="病历号*" />
+      <TextField fx:id="id" layoutX="160.0" layoutY="181.0" prefHeight="30.0" prefWidth="216.0" />
+      <Button layoutX="767.0" layoutY="181.0" mnemonicParsing="false" onAction="#showItems" text="搜索" />
+      <Pane layoutX="962.0" layoutY="108.0" prefHeight="692.0" prefWidth="246.0" style="-fx-background-color: f2f6f5;">
+         <children>
+            <VBox layoutY="45.0" prefHeight="241.0" prefWidth="246.0">
+               <children>
+                  <Button fx:id="b1" contentDisplay="RIGHT" mnemonicParsing="false" onAction="#turnToRegisterPage" prefHeight="60.0" prefWidth="259.0" style="-fx-background-color: c8dad3;" text="挂号">
+                     <font>
+                        <Font name="Microsoft YaHei UI Light" size="24.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="b2" mnemonicParsing="false" onAction="#turnToReturnPage" prefHeight="60.0" prefWidth="246.0" style="-fx-background-color: #d5e0db;" text="退号">
+                     <font>
+                        <Font name="Microsoft YaHei UI Light" size="24.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="b3" mnemonicParsing="false" prefHeight="61.0" prefWidth="246.0" style="-fx-background-color: #e7eeeb;" text="退费" textOverrun="CENTER_ELLIPSIS" wrapText="true">
+                     <font>
+                        <Font name="Microsoft YaHei UI Light" size="30.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="b4" mnemonicParsing="false" onAction="#turnToChargePage" prefHeight="61.0" prefWidth="246.0" style="-fx-background-color: #e8f1ed;" text="缴费">
+                     <font>
+                        <Font name="Microsoft YaHei UI Light" size="24.0" />
+                     </font>
+                  </Button>
+               </children>
+            </VBox>
+            <Label layoutX="14.0" layoutY="14.0" text="MENU" />
+            <Button fx:id="refundButton" layoutY="580.0" mnemonicParsing="false" onAction="#refund" prefHeight="60.0" prefWidth="246.0" text="确认退费">
+               <font>
+                  <Font name="Microsoft YaHei UI Light" size="24.0" />
+               </font>
+            </Button>
+         </children>
+      </Pane>
+      <Pane prefHeight="108.0" prefWidth="1208.0" style="-fx-background-color: c8dad3;">
+         <children>
+            <Label layoutX="860.0" layoutY="76.0" text="东软云HIS医院管理系统" />
+            <Label layoutX="38.0" layoutY="25.0" text="挂号系统 Register System">
+               <font>
+                  <Font name="Microsoft YaHei UI Light" size="48.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Text layoutX="95.0" layoutY="682.0" strokeType="OUTSIDE" strokeWidth="0.0" text="金额" />
+      <Text layoutX="45.0" layoutY="646.0" strokeType="OUTSIDE" strokeWidth="0.0" text="结算信息">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <TextField fx:id="sum" editable="false" layoutX="169.0" layoutY="661.0" onAction="#calculateTempSumPrice" prefHeight="30.0" prefWidth="140.0" />
+   </children>
+</AnchorPane>

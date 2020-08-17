@@ -1,0 +1,15 @@
+{"form":"1盒---50粒","iD":"385941","medicineStatus":"已开立","name":"六味地黄丸","pinyin":"liuweidihuangwan","price":13.0,"totalNumber":2000,"type":"中药","usage":" "}
+{"form":"1盒---6支","iD":"534645","medicineStatus":"已开立","name":"银黄口服液","pinyin":"yinhuangkoufuye","price":8.0,"totalNumber":2000,"type":"中药","usage":" "}
+{"form":"1袋---50g","iD":"564312","medicineStatus":"已开立","name":"菊花","pinyin":"juhua","price":6.0,"totalNumber":2000,"type":"中药","usage":" "}
+{"form":"1袋---200g","iD":"574312","medicineStatus":"已开立","name":"何首乌","pinyin":"heshouwu","price":36.0,"totalNumber":2000,"type":"中药","usage":" "}
+{"form":"1盒---100g","iD":"651631","medicineStatus":"已开立","name":"虎m鞭","pinyin":"hubian","price":75.0,"totalNumber":2000,"type":"中药","usage":" "}
+{"form":"1盒---150g","iD":"731631","medicineStatus":"已开立","name":"板蓝根颗粒","numbers":"1000","pinyin":"banlangenkeli","price":14.0,"totalNumber":2000,"type":"中药","usage":"口服"}
+{"form":"1袋---150g","iD":"1652498","medicineStatus":"已开立","name":"肉桂","pinyin":"rougui","price":24.0,"totalNumber":2000,"type":"中药","usage":" "}
+{"form":"一盒---24粒","iD":"2658462","medicineStatus":"已开立","name":"阿司匹林","numbers":"12","pinyin":"asipilin","price":26.0,"totalNumber":1986,"type":"西药","usage":"口服"}
+{"form":"一盒---16粒","iD":"4356742","medicineStatus":"已开立","name":"罗红霉素","numbers":"2","pinyin":"luohongmeisu","price":28.0,"totalNumber":1984,"type":"西药","usage":"外用"}
+{"form":"1盒---6支","iD":"4535878","medicineStatus":"已开立","name":"双黄连口服液","pinyin":"shuanghuangliankoufuye","price":9.0,"totalNumber":2000,"type":"中药","usage":" "}
+{"form":"一袋---500g","iD":"4652564","medicineStatus":"已开立","name":"布洛芬","numbers":"1","pinyin":"buluofen","price":19.0,"totalNumber":1999,"type":"西药","usage":"口服"}
+{"form":"1袋---100g","iD":"4656213","medicineStatus":"已开立","name":"金银花","pinyin":"jinyinhua","price":8.0,"totalNumber":2000,"type":"中药","usage":" "}
+{"form":"一盒---12粒","iD":"5794142","medicineStatus":"已开立","name":"头孢","numbers":"1","pinyin":"toubao","price":21.0,"totalNumber":1995,"type":"西药","usage":"口服"}
+{"form":"一盒---16粒","iD":"5813564","medicineStatus":"已开立","name":"青霉素","numbers":"1","pinyin":"qingmeisu","price":16.0,"totalNumber":1986,"type":"西药","usage":"1"}
+{"form":"一袋---8粒","iD":"5879564","medicineStatus":"已开立","name":"维C银翘片","numbers":"3","pinyin":"weiCyinqiaopian","price":19.0,"totalNumber":1996,"type":"西药","usage":"一天一次"}

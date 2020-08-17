@@ -1,0 +1,5 @@
+{"name":"心血管内科","doctors":[{"name":"李媛"},{"name":"张潇潇"},{"name":"张国锋"},{"name":"杨进"},{"name":"分诊医生"}]}
+{"name":"神经内科","doctors":[{"name":"邱秋"},{"name":"李元平"}]}
+{"name":"普通内科","doctors":[{"name":"葛黎明"},{"name":"冯俊熙"},{"name":"杨雨萌"}]}
+{"name":"消化内科","doctors":[{"name":"李友"},{"name":"肖晓璇"}]}
+{"name":"呼吸内科","doctors":[{"name":"徐洁书"},{"name":"朱新月"},{"name":"董静"},{"name":"郑星宇"}]}

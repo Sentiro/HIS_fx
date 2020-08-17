@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.Invoice">
+   <children>
+      <Text layoutX="52.0" layoutY="65.0" strokeType="OUTSIDE" strokeWidth="0.0" text="发票号" />
+      <Text layoutX="59.0" layoutY="126.0" strokeType="OUTSIDE" strokeWidth="0.0" text="病历号" />
+      <Text layoutX="300.0" layoutY="126.0" strokeType="OUTSIDE" strokeWidth="0.0" text="姓名" />
+      <Text layoutX="59.0" layoutY="189.0" strokeType="OUTSIDE" strokeWidth="0.0" text="支付方式" />
+      <Text layoutX="59.0" layoutY="259.0" strokeType="OUTSIDE" strokeWidth="0.0" text="应收金额" />
+      <Text layoutX="294.0" layoutY="259.0" strokeType="OUTSIDE" strokeWidth="0.0" text="实收金额" />
+   </children>
+</AnchorPane>

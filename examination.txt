@@ -1,0 +1,6 @@
+{"name":"X线检查","department":"检查科","number":"2658462","price":"120","status":"进行中"}
+{"name":"B超常规检查","department":"检查科","number":"4865846","price":"200","status":"进行中"}
+{"name":"血常规检查","department":"检查科","number":"1315346","price":"50","status":"进行中"}
+{"name":"彩色多普勒超声常规检查","department":"检查科","number":"4653186","price":"200","status":"进行中"}
+{"name":"ABO血型测定","department":"检查科","number":"9878499","price":"100","status":"进行中"}
+{"name":"钾测定","department":"检查科","number":"4135846","price":"20","status":"进行中"}

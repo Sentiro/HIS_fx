@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement />
+  <nodes>
+    <node x="620.0" y="0.0">Data.Hospital.Medicine</node>
+    <node x="806.0" y="1558.0">controller.LoginC</node>
+    <node x="306.0" y="0.0">Data.Patient.OneRecord</node>
+    <node x="0.0" y="933.0">controller.Charge</node>
+    <node x="1136.0" y="1211.0">Data.User.DoctorG</node>
+    <node x="0.0" y="1853.0">Data.Hospital.Doctor</node>
+    <node x="1408.0" y="1211.0">Data.User.DoctorM</node>
+    <node x="0.0" y="0.0">controller.Register</node>
+    <node x="522.0" y="1558.0">Data.Hospital.Department</node>
+    <node x="876.0" y="0.0">Data.Others.item</node>
+    <node x="1613.0" y="1558.0">Data.UserData</node>
+    <node x="-13.707831325301271" y="44.62523572551072">controller.ReturnRegister</node>
+    <node x="202.0" y="1853.0">Data.Others.FileUse</node>
+    <node x="1556.0" y="933.0">Data.Patient.Record</node>
+    <node x="1195.0" y="0.0">Data.Patient.Register</node>
+    <node x="602.0" y="933.0">Data.Patient.Patient</node>
+    <node x="549.0" y="1853.0">Data.Others.Invoice</node>
+    <node x="1057.0" y="1558.0">Data.RecordData</node>
+    <node x="202.0" y="1558.0">Data.HospitalData</node>
+    <node x="301.0" y="933.0">controller.Refund</node>
+    <node x="0.0" y="1558.0">Data.Others.RLevel</node>
+    <node x="1381.0" y="1558.0">Data.Others.RLevelData</node>
+    <node x="1234.0" y="933.0">Data.User.User</node>
+    <node x="852.0" y="933.0">controller.MedicineDistribution</node>
+    <node x="1462.0" y="0.0">controller.DoctorMView</node>
+    <node x="1258.0" y="1211.0">Data.User.Administrator</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="controller.ReturnRegister" target="Data.Others.FileUse">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="Data.RecordData" target="Data.Patient.Patient">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="Data.UserData" target="Data.User.DoctorG">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="Data.UserData" target="Data.User.DoctorM">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="Data.User.DoctorM" target="Data.User.User">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="Data.HospitalData" target="Data.Hospital.Medicine">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="controller.Refund" target="Data.Others.FileUse">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="controller.Register" target="Data.HospitalData">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="controller.Register" target="Data.Others.FileUse">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="Data.UserData" target="Data.User.Administrator">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="controller.Charge" target="Data.Others.item">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="Data.RecordData" target="Data.Patient.OneRecord">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="Data.Patient.OneRecord" target="Data.Patient.Record">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="Data.Patient.OneRecord" target="Data.Patient.Patient">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="controller.Register" target="Data.Patient.Patient">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="Data.HospitalData" target="Data.Hospital.Department">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="Data.HospitalData" target="Data.Others.FileUse">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="controller.Charge" target="Data.Others.FileUse">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="controller.DoctorMView" target="Data.Patient.OneRecord">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="Data.Patient.Register" target="Data.Others.RLevel">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="controller.Charge" target="Data.RecordData">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="controller.DoctorMView" target="controller.LoginC">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="controller.MedicineDistribution" target="Data.Others.item">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="controller.Register" target="Data.Patient.Record">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="Data.User.DoctorG" target="Data.User.User">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="controller.ReturnRegister" target="Data.Patient.OneRecord">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="controller.Refund" target="Data.Patient.Record">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="controller.DoctorMView" target="Data.Hospital.Medicine">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="Data.Others.RLevelData" target="Data.Others.RLevel">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="controller.MedicineDistribution" target="Data.Hospital.Medicine">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="Data.Hospital.Department" target="Data.Hospital.Doctor">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="controller.Charge" target="Data.Hospital.Medicine">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="controller.Register" target="Data.Patient.OneRecord">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="controller.Register" target="Data.Patient.Register">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="controller.MedicineDistribution" target="Data.Patient.OneRecord">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="controller.DoctorMView" target="Data.RecordData">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="controller.ReturnRegister" target="Data.RecordData">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="controller.Refund" target="Data.RecordData">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="controller.Charge" target="Data.Patient.OneRecord">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="controller.Register" target="Data.RecordData">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="Data.Patient.Record" target="Data.Patient.OneRecord">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="Data.User.Administrator" target="Data.User.User">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="Data.Patient.Record" target="Data.Patient.Patient">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="controller.Register" target="Data.Hospital.Doctor">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="controller.Register" target="Data.Hospital.Department">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="Data.UserData" target="Data.User.User">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="controller.Charge" target="Data.Patient.Record">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="controller.Register" target="Data.Others.RLevel">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="controller.Refund" target="Data.Others.item">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="controller.DoctorMView" target="Data.Hospital.Doctor">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="controller.DoctorMView" target="Data.HospitalData">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="controller.ReturnRegister" target="Data.Patient.Record">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="controller.DoctorMView" target="Data.Patient.Record">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="controller.Refund" target="Data.Hospital.Medicine">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="Data.UserData" target="Data.Others.FileUse">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="controller.Refund" target="Data.Patient.OneRecord">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="controller.MedicineDistribution" target="Data.RecordData">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="controller.Register" target="Data.Others.RLevelData">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="Data.RecordData" target="Data.Others.FileUse">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="Data.Others.FileUse" target="Data.Patient.Record">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="controller.MedicineDistribution" target="Data.Others.FileUse">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="controller.MedicineDistribution" target="Data.Patient.Record">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="Data.Patient.OneRecord" target="Data.Hospital.Medicine">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="Data.RecordData" target="Data.Patient.Record">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="Data.Patient.OneRecord" target="Data.Patient.Register">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="controller.DoctorMView" target="Data.Others.FileUse">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="0.9460674157303369" x="757.0" y="309.52259036144585" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Fields</Category>
+    <Category>Methods</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
